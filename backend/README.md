@@ -31,6 +31,25 @@ password: '1234'
 database: 'mvst-coffee-challenge-db'
 ```
 
+### Database Migrations
+
+After starting the database, you need to run migrations to create tables and seed initial data:
+
+```bash
+# Run migrations to create tables and seed data
+$ yarn migration:run
+
+# If you need to revert the last migration
+$ yarn migration:revert
+```
+
+The migrations will:
+
+1. Create necessary database extensions
+2. Create coffee types enum (Arabic, Robusta)
+3. Create coffees table with all required fields
+4. Seed initial coffee data
+
 ### Running the project in development mode
 
 ```bash
