@@ -14,7 +14,7 @@ export class CreateCoffeeDto {
   name: string;
 
   @IsString()
-  @MinLength(10, { message: 'Description must be at least 10 characters long' })
+  @MinLength(3, { message: 'Description must be at least 3 characters long' })
   description: string;
 
   @IsEnum(CoffeeType)

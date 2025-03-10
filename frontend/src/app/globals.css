@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Toastify__toast {
+  max-width: 330px !important;
+  padding: 0 !important;
+  background: #FF4949 !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: var(--font-poppins) !important;
+}
+
+.Toastify__toast-icon,
+.Toastify__toast>button {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+@media (max-width: 640px) {
+  .Toastify__toast-container {
+    padding: 25px !important;
+  }
+
+  .Toastify__toast {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
